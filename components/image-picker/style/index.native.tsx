@@ -3,7 +3,7 @@ import varibles from '../../style/themes/default.native';
 
 export interface IImagePickerStyle {
   container: ViewStyle;
-  size: ViewStyle;
+  size: ImageStyle;
   item: ViewStyle;
   image: ImageStyle;
   closeWrap: ViewStyle;

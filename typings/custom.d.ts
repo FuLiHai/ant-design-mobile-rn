@@ -19,3 +19,4 @@ declare var process: {
     DISABLE_ANTD_MOBILE_UPGRADE: string;
   };
 };
+declare module 'react-native-collapsible/Accordion';

@@ -132,7 +132,7 @@ export default class InputItem extends React.Component<InputItemProps, any> {
       onExtraClick,
       onErrorClick,
       styles,
-      ...restProps,
+      ...restProps
     } = this.props;
     const { value, defaultValue, style } = restProps;
 

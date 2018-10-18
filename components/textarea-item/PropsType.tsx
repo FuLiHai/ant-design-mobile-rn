@@ -19,6 +19,4 @@ export interface TextAreaItemPropsType {
   labelNumber?: number;
 
   onChange?: TextAreaEventHandle;
-  onBlur?: TextAreaEventHandle;
-  onFocus?: TextAreaEventHandle;
 }

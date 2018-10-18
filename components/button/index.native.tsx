@@ -82,7 +82,7 @@ export default class Button extends React.Component<ButtonProps, any> {
       style,
       styles,
       loading,
-      ...restProps,
+      ...restProps
     } = this.props;
     // tslint:disable-next-line:variable-name
     const _styles: any = styles!;

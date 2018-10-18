@@ -8,6 +8,8 @@ import {
   TextInputProperties,
   TouchableWithoutFeedback,
   View,
+  NativeSyntheticEvent,
+  TextInputChangeEventData,
 } from 'react-native';
 import variables from '../style/themes/default.native';
 import { TextAreaItemPropsType } from './PropsType';
@@ -65,14 +67,7 @@ export default class TextAreaItem extends React.Component<
     };
   }
 
-  onChange = (event: {
-    nativeEvent: {
-      text: string;
-      contentSize: { width: number; height: number };
-      target: number;
-      eventCount: number;
-    };
-  }) => {
+  onChange = (event: NativeSyntheticEvent<TextInputChangeEventData>) => {
     const text = event.nativeEvent.text;
     const { onChange } = this.props;
 
@@ -119,7 +114,7 @@ export default class TextAreaItem extends React.Component<
       onErrorClick,
       styles,
       style,
-      ...restProps,
+      ...restProps
     } = this.props;
     const { value, defaultValue } = restProps;
     const { inputCount } = this.state;
